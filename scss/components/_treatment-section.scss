@@ -1,0 +1,103 @@
+.treatment-section {
+  &__title {
+    text-align: center;
+    margin-bottom: 48px;
+    color: var(--color-brand-ligt);
+    font-family: 'Play';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.15;
+
+    &--accent {
+      color: var(--color-brand-dark);
+    }
+  }
+
+  &__container {
+    align-items: center;
+    display: flex;
+    gap: 32px;
+    width: 1216px;
+    height: 499px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--color-brand-white);
+    border: 1px solid var(--color-brand-dark);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-brand-ligt);
+      border: 1px solid var(--color-brand-white);
+    }
+
+    &--next {
+      transform: rotate(180deg);
+    }
+
+    &:hover {
+      fill: var(--color-brand-white);
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__pict {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    width: 344px;
+    height: 456px;
+    padding: 37px;
+    background-image: linear-gradient(
+      180.05deg,
+      rgba(1, 28, 68, 0) 48.53%,
+      rgba(1, 28, 68, 0.725825) 84.61%,
+      var(--color-brand-dark) 101.39%
+    );
+    transition: transform 0.3s;
+    border-top-right-radius: 120px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 4px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-top-right-radius: 120px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 4px;
+  }
+
+  &__right {
+    color: var(--color-brand-white);
+    font-size: 22px;
+    line-height: 1.18;
+    width: 152px;
+    height: 52px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

@@ -1,0 +1,36 @@
+.form-field {
+  margin-bottom: 24px;
+  font-size: 13px;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-input {
+  padding: 18px 32.85px;
+  width: 310px;
+  height: 52px;
+  margin: 0 auto;
+  display: block;
+  font-size: 13px;
+  border: 2px solid var(--color-brand-gray);
+  border-radius: 32px;
+  background-color: var(--color-brand-dark);
+  color: var(--color-brand-white);
+}
+
+.form-input:focus {
+  background-color: var(--color-brand-gray);
+  border: var(--color-brand-gray);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-brand-white);
+  font-size: 13px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+}

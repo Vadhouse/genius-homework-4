@@ -1,0 +1,15 @@
+.header__link {
+  color: var(--color-brand-dark);
+  font-weight: 700;
+  line-height: 1.16;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social {
+  color: var(--color-brand-dark);
+}
+
+.header__link:hover {
+  color: var(--color-brand-ligt);
+}

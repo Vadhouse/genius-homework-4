@@ -1,0 +1,70 @@
+.hero-section {
+  padding: 123.12px 0 126.81px 244px;
+  background-image: linear-gradient(
+      89.38deg,
+      #ffffff 30.62%,
+      rgba(255, 255, 255, 0.850898) 41.31%,
+      rgba(255, 255, 255, 0.193204) 58.65%,
+      rgba(255, 255, 255, 0) 72.78%
+    ),
+    url('/Images/hero-section-background.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+  width: 100%;
+  max-width: 1151.97px;
+  height: 100%;
+  max-height: 686.93px;
+
+  &__container {
+    width: 319px;
+    height: 184px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 529px;
+      height: 408px;
+    }
+  }
+
+  &__secondary__title {
+    color: var(--color-brand-dark);
+    line-height: 1.16;
+    margin-bottom: 0;
+  }
+
+  &__title {
+    color: var(--color-brand-ligt);
+    font-family: 'Play';
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 0.85;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 0;
+      padding: 16px 0px 40px 0px;
+      max-width: 529px;
+      font-size: 140px;
+      line-height: 0.81;
+    }
+  }
+
+  &__ultimate__title {
+    color: var(--color-brand-dark-gray);
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 8px;
+    width: 186px;
+    height: 36px;
+    font-size: 11px;
+    line-height: 1.63;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding-top: 14px;
+      width: 238px;
+      height: 36px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+}

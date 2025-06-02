@@ -1,0 +1,71 @@
+.about-section {
+  &__list {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__item {
+    max-width: 709px;
+    max-height: 456px;
+  }
+
+  &__title {
+    max-width: 529px;
+    margin: 40px 0 40px 0;
+    color: var(--color-brand-ligt);
+    font-family: 'Play';
+    font-size: 64px;
+    font-weight: 700px;
+    line-height: 1.15;
+    text-align: left;
+  }
+
+  &__title {
+    &--accent {
+      color: var(--color-brand-dark);
+    }
+  }
+
+  &__title__beauty {
+    margin-bottom: 40px;
+    max-width: 709px;
+    color: var(--color-brand-dark);
+    font-size: 22px;
+    line-height: 1.7;
+
+    &:last-child {
+      margin-bottom: 199px;
+    }
+  }
+
+  &__title__beauty {
+    &--bold {
+      font-weight: bold;
+    }
+  }
+
+  &__title__beauty {
+    &--capitalize {
+      text-transform: capitalize;
+    }
+  }
+
+  &__woman__face {
+    display: grid;
+    gap: 40px;
+  }
+
+  &__face__before {
+    box-shadow: (0px 4px 4px rgba(168, 198, 245, 0.2)); /*--не застосувалось знайти причину чому--*/
+    background-color: #d9d9d9;
+    margin: 1px 168px 0 4px;
+    border-radius: 50%;
+  }
+
+  &__face__after {
+    box-shadow: (0px 4px 4px rgba(168, 198, 245, 0.2)); /*--не застосувалось знайти причину чому--*/
+    background-color: #d9d9d9;
+    margin-left: 164px;
+    border-radius: 50%;
+  }
+}

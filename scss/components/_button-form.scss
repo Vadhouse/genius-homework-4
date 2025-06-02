@@ -1,0 +1,35 @@
+.button-form {
+  padding: 16px 32px;
+  color: var(--color-brand-white);
+  background: var(--color-brand-ligt);
+  border: 2px solid var(--color-brand-ligt);
+  border-radius: 32px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Roboto';
+  font-size: 18px;
+  display: block;
+  margin: 0 auto 8px;
+  text-align: center;
+
+  &:hover {
+    color: #000000;
+    background-color: transparent;
+    border: 2px solid var(--color-brand-ligt);
+  }
+}
+
+.form-terms {
+  color: var(--color-brand-gray);
+  font-size: 12px;
+  width: 213px;
+  height: 36px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+  &__link {
+    color: var(--color-brand-gray);
+    text-underline-offset: 1px;
+  }
+}

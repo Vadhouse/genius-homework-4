@@ -1,0 +1,19 @@
+.button {
+  padding: 16px 32px;
+  color: var(--color-brand-white);
+  background: var(--color-brand-ligt);
+  border: 2px solid var(--color-brand-ligt);
+  border-radius: 32px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Roboto';
+  width: 223px;
+  height: 57px;
+  font-size: 18px;
+}
+
+.button:hover {
+  color: #000000;
+  background-color: transparent;
+  border: 2px solid var(--color-brand-ligt);
+}
