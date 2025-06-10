@@ -10,14 +10,22 @@
   }
 
   &__title {
-    max-width: 529px;
-    margin: 40px 0 40px 0;
+    width: 264px;
     color: var(--color-brand-ligt);
-    font-family: 'Play';
-    font-size: 64px;
-    font-weight: 700px;
-    line-height: 1.15;
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-weight: 500px;
+    line-height: 1.18;
     text-align: left;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 529px;
+      margin: 40px 0 40px 0;
+      font-family: 'Play';
+      font-size: 64px;
+      font-weight: 700px;
+      line-height: 1.15;
+    }
   }
 
   &__title {
@@ -28,10 +36,16 @@
 
   &__title__beauty {
     margin-bottom: 40px;
-    max-width: 709px;
+    width: 320px;
     color: var(--color-brand-dark);
-    font-size: 22px;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.16;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+      line-height: 1.7;
+      width: 709px;
+    }
 
     &:last-child {
       margin-bottom: 199px;
@@ -53,6 +67,11 @@
   &__woman__face {
     display: grid;
     gap: 40px;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
   }
 
   &__face__before {

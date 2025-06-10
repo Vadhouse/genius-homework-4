@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
     <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <header class="header">
@@ -45,7 +46,7 @@
               </svg>
             </button>
             <div class="mobile-menu">
-              <button class="menu-btn-close" type="button">Close</button>
+              <button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
             </div>
           </div>
         </div>
@@ -134,43 +135,101 @@
       <section class="treatment-section section" id="treatment-section">
         <div class="container">
           <h2 class="treatment-section__title"><span class="treatment-section__title--accent">Наші</span> процедури</h2>
-          <div class="treatment-section__container">
-            <button class="treatment-section__button" type="button">
+          <div class="treatment-section__slider">
+            <button class="treatment-section__button__btn treatment-section__button prew" type="button">
               <svg class="treatment-section__arrow" width="16.76" height="16.76">
                 <use href="./Images/icons.svg#icon-Arrow"></use>
               </svg>
             </button>
-            <ul class="treatment-section__list">
-              <li>
-                <article class="treatment-section__pict">
-                  <img
-                    class="treatment-section__image"
-                    src="./Images/treatment cream.jpg"
-                    alt="Обличчя жінки намащене кремом"
-                  />
-                  <p class="treatment-section__right">
-                    Маски <br />
-                    для обличчя
-                  </p>
-                </article>
-              </li>
-              <li>
-                <article class="treatment-section__pict">
-                  <img class="treatment-section__image" src="./Images/treatment injection.jpg" alt="Обличчя жінки інєкція" />
-                  <p class="treatment-section__right">
-                    Ін'єкції <br />
-                    для обличчя
-                  </p>
-                </article>
-              </li>
-              <li>
-                <article class="treatment-section__pict">
-                  <img class="treatment-section__image" src="./Images/treatment caress.jpg" alt="Обличчя жінки лопатка" />
-                  <p class="treatment-section__right">Очищення обличчя</p>
-                </article>
-              </li>
-            </ul>
-            <button class="treatment-section__button treatment-section__button--next" type="button">
+            <div class="treatment-section__container swiper-container">
+              <ul class="treatment-section__list swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="treatment-section__pict">
+                    <div class="treatment-section__pict__container">
+                      <img
+                        class="treatment-section__image"
+                        src="./Images/treatment cream.jpg"
+                        alt="Обличчя жінки намащене кремом"
+                      />
+                      <p class="treatment-section__right">
+                        Маски <br />
+                        для обличчя
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="treatment-section__pict">
+                    <div class="treatment-section__pict__container">
+                      <img
+                        class="treatment-section__image"
+                        src="./Images/treatment injection.jpg"
+                        alt="Обличчя жінки інєкція"
+                      />
+                      <p class="treatment-section__right">
+                        Ін'єкції <br />
+                        для обличчя
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="treatment-section__pict">
+                    <div class="treatment-section__pict__container">
+                      <img class="treatment-section__image" src="./Images/treatment caress.jpg" alt="Обличчя жінки лопатка" />
+                      <p class="treatment-section__right">Очищення обличчя</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="treatment-section__pict">
+                    <div class="treatment-section__pict__container">
+                      <img
+                        class="treatment-section__image"
+                        src="./Images/treatment cream.jpg"
+                        alt="Обличчя жінки намащене кремом"
+                      />
+                      <p class="treatment-section__right">
+                        Маски <br />
+                        для обличчя
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="treatment-section__pict">
+                    <div class="treatment-section__pict__container">
+                      <img
+                        class="treatment-section__image"
+                        src="./Images/treatment injection.jpg"
+                        alt="Обличчя жінки інєкція"
+                      />
+                      <p class="treatment-section__right">
+                        Ін'єкції <br />
+                        для обличчя
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="treatment-section__pict">
+                    <div class="treatment-section__pict__container">
+                      <img class="treatment-section__image" src="./Images/treatment caress.jpg" alt="Обличчя жінки лопатка" />
+                      <p class="treatment-section__right">Очищення обличчя</p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <button class="pagination__button" type="button" aria-label="Go to slide 1"></button>
+                <button class="pagination__button" type="button" aria-label="Go to slide 2"></button>
+                <button class="pagination__button" type="button" aria-label="Go to slide 3"></button>
+              </div>
+            </div>
+            <button
+              class="treatment-section__button__btn treatment-section__button next treatment-section__button--next"
+              type="button"
+            >
               <svg class="our-treatment-icon-arrow" width="16.76" height="16.76">
                 <use href="./Images/icons.svg#icon-Arrow"></use>
               </svg>
@@ -185,8 +244,6 @@
             <iframe
               class="contacts-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9398795016164!2d30.515553975781348!3d50.4422204879573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1744712798059!5m2!1suk!2sua"
-              width="605"
-              height="481"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -246,56 +303,56 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-container">
-          <nav class="footer-nav">
-            <div class="footer-logo">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <div class="footer__logo">
               <a href="#">
                 <img src="./Images/logo.svg" alt="Логотип зона краси" />
               </a>
             </div>
-            <ul class="footer-menu">
+            <ul class="footer__menu">
               <li><a class="footer__link" href="#">Про нас</a></li>
               <li><a class="footer__link" href="#">Чому ми</a></li>
               <li><a class="footer__link" href="#">Наші процедури</a></li>
               <li><a class="footer__link" href="#">Контакти</a></li>
             </ul>
           </nav>
-          <address class="footer-address">
-            <ul class="address-list">
-              <li><a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-              <li>
-                <a class="address-link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
-              </li>
-              <li>
-                <a class="address-link" href="https://maps.app.goo.gl/Yb3XjxZspCJDs2Bh7" target="_blank"
-                  >Україна, м. Київ, вул. Тараса Шевченка 5</a
-                >
-              </li>
-              <li>
+          <address class="footer__address">
+            <div class="footer__address-contacts">
+              <ul class="footer__address-list">
+                <li><a class="footer__address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+                <li>
+                  <a class="footer__address-link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+                </li>
+                <li>
+                  <a class="footer__address-link" href="https://maps.app.goo.gl/Yb3XjxZspCJDs2Bh7" target="_blank"
+                    >Україна, м. Київ, <br />
+                    вул. Тараса Шевченка 5</a
+                  >
+                </li>
+              </ul>
+              <div>
                 <a href="#">
-                  <svg class="address-social" width="42" height="42">
+                  <svg class="footer__address-social" width="42" height="42">
                     <use href="./Images/icons.svg#icon-telephone-b"></use>
                   </svg>
                 </a>
-              </li>
-              <li>
                 <a href="#">
-                  <svg class="address-social" width="42" height="42">
+                  <svg class="footer__address-social" width="42" height="42">
                     <use href="./Images/icons.svg#icon-facebook-b"></use>
                   </svg>
                 </a>
-              </li>
-              <li>
                 <a href="#">
-                  <svg class="address-social" width="42" height="42">
+                  <svg class="footer__address-social" width="42" height="42">
                     <use href="./Images/icons.svg#icon-instagram-b"></use>
                   </svg>
                 </a>
-              </li>
-            </ul>
-            <div class="address-info">
-              <a class="address-link-confi" href="#" target="_blank">Політика конфіденційності</a>
-              <p class="address-copyright">&copy; 2022 Дані захищені</p>
+              </div>
+            </div>
+
+            <div class="footer__address-info">
+              <a class="footer__address-link-confi" href="#" target="_blank">Політика конфіденційності</a>
+              <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>
             </div>
           </address>
         </div>
@@ -347,6 +404,8 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/treatment-slider.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

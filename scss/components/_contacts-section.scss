@@ -1,12 +1,19 @@
 .contacts-section {
   &__title {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
     color: var(--color-brand-ligt);
-    font-family: 'Play';
-    font-weight: 700;
-    font-size: 64px;
+    font-weight: 500;
+    font-size: 32px;
     line-height: 1.15;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 48px;
+      font-family: 'Play';
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 1.15;
+    }
 
     &--accent {
       color: var(--color-brand-dark);
@@ -15,11 +22,26 @@
 
   &__container {
     display: flex;
-    gap: 32px;
+    flex-direction: column;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 32px;
+    }
   }
 
   &__map {
+    flex-shrink: 0;
+    height: 232px;
+    margin: 0 -24px;
     border-radius: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: auto;
+      width: 605px;
+      height: 481px;
+    }
   }
 
   &__form {

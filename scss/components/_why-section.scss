@@ -1,13 +1,21 @@
 .why-section {
   &__title {
     text-align: center;
-    max-width: 432px;
+    max-width: 210px;
     margin: 0 auto 130.5px;
     color: var(--color-brand-ligt);
-    font-family: 'Play';
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 1.15;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.18;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 432px;
+      font-family: 'Play';
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 1.15;
+    }
   }
 
   &__title {
@@ -18,8 +26,16 @@
 
   &__title__cards__list {
     display: flex;
-    gap: 56px;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 56px;
+      justify-content: center;
+    }
   }
 
   &__title__card {
@@ -36,6 +52,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 12px;
   }
 
   &__title__text {
