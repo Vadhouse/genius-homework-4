@@ -1,5 +1,5 @@
 .footer {
-  padding: 56px 100px;
+  padding: 56px 0;
   position: relative;
   background-image: url('/Images/footer-background.png');
   background-color: var(--color-brand-dark);
@@ -10,8 +10,8 @@
 
   &__container {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    gap: 32px;
+    justify-content: center;
 
     @media screen and (min-width: $bp-tablet) {
       flex-direction: row;
@@ -37,8 +37,9 @@
     flex-grow: 1;
   }
 
-  &__address-list,
-  &__address-info {
+  &__address-list {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
   }
 
@@ -62,7 +63,7 @@
   &__address-social {
     fill: var(--color-brand-white);
     margin-top: 16px;
-    margin-right: 28px;
+    margin-right: 20px;
   }
 
   &__address-link-confi {

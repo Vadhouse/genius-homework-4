@@ -24,12 +24,17 @@
     align-items: center;
     display: flex;
     gap: 32px;
+    justify-content: center;
     width: 1216px;
     height: 499px;
   }
 
   &__container {
     overflow: hidden;
+    @media screen and (min-width: $bp-desktop) {
+      margin: 0 auto;
+      max-width: 1216px;
+    }
   }
 
   &__button {
