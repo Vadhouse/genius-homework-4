@@ -28,7 +28,8 @@
   margin: 0 auto;
   text-align: center;
 
-  &__link {
+  &__link,
+  .form-terms-link {
     color: var(--color-brand-gray);
     text-underline-offset: 1px;
   }

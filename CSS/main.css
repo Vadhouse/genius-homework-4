@@ -94,7 +94,7 @@ a {
 }
 
 .section {
-  padding: 96px 0;
+  padding: 48px 0;
 }
 
 .container {
@@ -247,7 +247,8 @@ a {
 .hero-section__container {
   width: 319px;
   height: 184px;
-  padding-left: 189px;
+  padding-left: 105px;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .hero-section__container {
@@ -257,16 +258,26 @@ a {
 }
 .hero-section__secondary__title {
   color: var(--color-brand-dark);
-  line-height: 1.16;
+  font-size: 12px;
   margin-bottom: 0;
+  text-align: center;
+  width: 133px;
+}
+@media screen and (min-width: 768px) {
+  .hero-section__secondary__title {
+    line-height: 1.16;
+    margin-bottom: 0;
+  }
 }
 .hero-section__title {
   color: var(--color-brand-ligt);
   font-family: "Play";
   font-size: 54px;
   font-weight: 700;
-  line-height: 0.81;
+  line-height: 0.85;
   margin-bottom: 32px;
+  text-align: center;
+  width: 330px;
 }
 @media screen and (min-width: 768px) {
   .hero-section__title {
@@ -298,7 +309,7 @@ a {
 }
 
 .about-section {
-  padding-bottom: 80px;
+  padding-bottom: 128px;
 }
 .about-section__list {
   display: -webkit-box;
@@ -751,6 +762,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   overflow: visible;
+  margin-top: 48px;
 }
 .footer__container {
   display: -webkit-box;
@@ -809,6 +821,7 @@ a {
   font-style: normal;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
+  padding-bottom: 16px;
 }
 .footer__address-link {
   color: var(--color-brand-white);
@@ -816,6 +829,7 @@ a {
   line-height: 1.18;
   text-decoration: none;
   font-style: normal;
+  padding-bottom: 16px;
 }
 .footer__address-social {
   fill: var(--color-brand-white);
@@ -828,6 +842,7 @@ a {
   line-height: 1.8;
   font-style: normal;
   text-decoration: none;
+  padding-bottom: 16px;
 }
 .footer__address-copyright {
   color: #747272;
@@ -1070,7 +1085,8 @@ a {
   margin: 0 auto;
   text-align: center;
 }
-.form-terms__link {
+.form-terms__link,
+.form-terms .form-terms-link {
   color: var(--color-brand-gray);
   text-underline-offset: 1px;
 }
