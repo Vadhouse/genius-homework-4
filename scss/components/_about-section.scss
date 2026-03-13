@@ -1,9 +1,21 @@
 .about-section {
-  padding-bottom: 128px;
+  padding-bottom: 0;
+  height: 347px;
+
+  @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+    padding-bottom: 128px;
+    height: 100%;
+  }
 
   &__list {
-    display: flex;
-    gap: 32px;
+    display: -webkit-box;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+    }
   }
 
   &__item {
@@ -13,19 +25,22 @@
 
   &__title {
     width: 264px;
+    height: 76px;
     color: var(--color-brand-ligt);
     font-family: 'Roboto';
     font-size: 32px;
-    font-weight: 500px;
+    font-weight: 700;
     line-height: 1.18;
     text-align: left;
+    margin-bottom: 24px;
 
-    @media screen and (min-width: $bp-tablet) {
-      max-width: 529px;
+    @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+      width: 529px;
+      height: 148px;
       margin: 40px 0 40px 0;
       font-family: 'Play';
       font-size: 64px;
-      font-weight: 700px;
+      font-weight: 700;
       line-height: 1.15;
     }
   }
@@ -33,24 +48,38 @@
   &__title {
     &--accent {
       color: var(--color-brand-dark);
+      font-weight: 500;
+
+      @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+        font-weight: 700;
+      }
     }
   }
 
   &__title__beauty {
-    margin-bottom: 40px;
+    margin-bottom: 16px;
     width: 320px;
+    height: 63px;
     color: var(--color-brand-dark);
     font-size: 18px;
     line-height: 1.16;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
       font-size: 22px;
       line-height: 1.7;
       width: 709px;
+      height: 76px;
+      margin-bottom: 40px;
     }
 
     &:last-child {
-      margin-bottom: 199px;
+      margin-bottom: 0;
+      height: 168px;
+
+      @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+        margin-bottom: 199px;
+        height: 152px;
+      }
     }
   }
 
@@ -71,7 +100,7 @@
     gap: 40px;
     display: none;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
       display: grid;
     }
   }
@@ -109,16 +138,20 @@
   &__star__1 {
     fill: var(--color-brand-dark);
     position: absolute;
-    x: 100px;
-    y: 50px;
+    top: 8px;
+    left: 267px;
+    width: 40px;
+    height: 40px;
     animation: star-blink 2.5s infinite ease-in-out alternate;
     pointer-events: none;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
       fill: var(--color-brand-dark);
       position: absolute;
       top: 54%;
       left: 32%;
+      width: 64px;
+      height: 64px;
       transform: translate(-50%, -50%);
       animation: star-blink 2.5s infinite ease-in-out alternate;
       pointer-events: none;
@@ -129,7 +162,7 @@
   &__star__2 {
     display: none;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
       fill: var(--color-brand-ligt);
       position: absolute;
       top: 8%;
@@ -145,7 +178,7 @@
   &__star__3 {
     display: none;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
       fill: var(--color-brand-gray);
       position: absolute;
       top: 39%;

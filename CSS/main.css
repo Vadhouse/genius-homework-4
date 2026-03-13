@@ -230,14 +230,14 @@ a {
 }
 
 .hero-section {
-  background-image: url("/Images/hero-section-background-group-wave-mob.webp");
+  background-image: url("../Images/hero-section-background-group-wave-mob.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
   .hero-section {
     padding: 123px 0 127px 0;
-    background-image: url("/Images/hero-section-background-group-wave.jpg");
+    background-image: url("../Images/hero-section-background-group-wave.jpg");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: cover;
@@ -259,7 +259,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
   .hero-section__container {
     width: 529px;
     height: 408px;
@@ -276,7 +276,7 @@ a {
   text-align: center;
   width: 133px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
   .hero-section__secondary__title {
     line-height: 1.16;
     margin-bottom: 0;
@@ -293,7 +293,7 @@ a {
   width: 330px;
   height: 46px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
   .hero-section__title {
     margin: 16px 0px 40px 0px;
     width: 529px;
@@ -313,7 +313,7 @@ a {
   font-size: 11px;
   line-height: 1.63;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
   .hero-section__ultimate__title {
     padding-top: 14px;
     width: 238px;
@@ -324,13 +324,33 @@ a {
 }
 
 .about-section {
-  padding-bottom: 128px;
+  padding-bottom: 0;
+  height: 347px;
+}
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
+  .about-section {
+    padding-bottom: 128px;
+    height: 100%;
+  }
 }
 .about-section__list {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 32px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
+  .about-section__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 32px;
+  }
 }
 .about-section__item {
   max-width: 709px;
@@ -338,42 +358,61 @@ a {
 }
 .about-section__title {
   width: 264px;
+  height: 76px;
   color: var(--color-brand-ligt);
   font-family: "Roboto";
   font-size: 32px;
-  font-weight: 500px;
+  font-weight: 700;
   line-height: 1.18;
   text-align: left;
+  margin-bottom: 24px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
   .about-section__title {
-    max-width: 529px;
+    width: 529px;
+    height: 148px;
     margin: 40px 0 40px 0;
     font-family: "Play";
     font-size: 64px;
-    font-weight: 700px;
+    font-weight: 700;
     line-height: 1.15;
   }
 }
 .about-section__title--accent {
   color: var(--color-brand-dark);
+  font-weight: 500;
+}
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
+  .about-section__title--accent {
+    font-weight: 700;
+  }
 }
 .about-section__title__beauty {
-  margin-bottom: 40px;
+  margin-bottom: 16px;
   width: 320px;
+  height: 63px;
   color: var(--color-brand-dark);
   font-size: 18px;
   line-height: 1.16;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
   .about-section__title__beauty {
     font-size: 22px;
     line-height: 1.7;
     width: 709px;
+    height: 76px;
+    margin-bottom: 40px;
   }
 }
 .about-section__title__beauty:last-child {
-  margin-bottom: 199px;
+  margin-bottom: 0;
+  height: 168px;
+}
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
+  .about-section__title__beauty:last-child {
+    margin-bottom: 199px;
+    height: 152px;
+  }
 }
 .about-section__title__beauty--bold {
   font-weight: bold;
@@ -386,7 +425,7 @@ a {
   gap: 40px;
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
   .about-section__woman__face {
     display: grid;
   }
@@ -433,18 +472,22 @@ a {
 .about-section__star__1 {
   fill: var(--color-brand-dark);
   position: absolute;
-  x: 100px;
-  y: 50px;
+  top: 8px;
+  left: 267px;
+  width: 40px;
+  height: 40px;
   -webkit-animation: star-blink 2.5s infinite ease-in-out alternate;
           animation: star-blink 2.5s infinite ease-in-out alternate;
   pointer-events: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
   .about-section__star__1 {
     fill: var(--color-brand-dark);
     position: absolute;
     top: 54%;
     left: 32%;
+    width: 64px;
+    height: 64px;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     -webkit-animation: star-blink 2.5s infinite ease-in-out alternate;
@@ -458,7 +501,7 @@ a {
 .about-section__star__2 {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
   .about-section__star__2 {
     fill: var(--color-brand-ligt);
     position: absolute;
@@ -479,7 +522,7 @@ a {
 .about-section__star__3 {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
   .about-section__star__3 {
     fill: var(--color-brand-gray);
     position: absolute;
@@ -498,10 +541,19 @@ a {
   }
 }
 
+.why-section {
+  padding: 104px 0 40px 0;
+}
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
+  .why-section {
+    padding: 48px 0 48px 0;
+  }
+}
 .why-section__title {
   text-align: center;
-  max-width: 210px;
-  margin: 0 auto 48px;
+  width: 210px;
+  height: 76px;
+  margin: 0 auto 24px;
   color: var(--color-brand-ligt);
   font-weight: 500;
   font-size: 32px;
@@ -509,7 +561,9 @@ a {
 }
 @media screen and (min-width: 768px) {
   .why-section__title {
-    max-width: 432px;
+    width: 432px;
+    height: 148px;
+    margin: 0 auto 48px;
     font-family: "Play";
     font-weight: 700;
     font-size: 64px;
@@ -520,6 +574,8 @@ a {
   color: var(--color-brand-dark);
 }
 .why-section__title__cards__list {
+  width: 316px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,9 +589,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .why-section__title__cards__list {
+    width: 1060px;
+    height: 181px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -566,8 +625,18 @@ a {
   color: #000000;
   line-height: 1.3;
   text-align: center;
+  width: 252px;
+  height: 72px;
 }
 
+.treatment-section {
+  padding: 0 0 40px 0;
+}
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
+  .treatment-section {
+    padding: 48px 0 48px 0;
+  }
+}
 .treatment-section__title {
   text-align: center;
   margin-bottom: 24px;
@@ -664,6 +733,7 @@ a {
           transform: scale(1.1);
 }
 .treatment-section__pict__container {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -706,6 +776,14 @@ a {
   text-align: center;
 }
 
+.contacts-section {
+  padding: 0;
+}
+@media screen and (min-width: 768px), screen and (min-width: 1280px) {
+  .contacts-section {
+    padding: 48px 0 48px 0;
+  }
+}
 .contacts-section__title {
   text-align: center;
   margin-bottom: 24px;
@@ -731,9 +809,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   gap: 24px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -749,15 +827,17 @@ a {
   }
 }
 .contacts-section__map {
+  width: 100%;
+  display: block;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   height: 232px;
-  border-radius: 32px;
 }
 @media screen and (min-width: 768px) {
   .contacts-section__map {
     width: 605px;
     height: 481px;
+    border-radius: 32px;
   }
 }
 .contacts-section__form {
