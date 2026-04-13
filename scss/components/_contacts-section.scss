@@ -43,6 +43,9 @@
     display: block;
     flex-shrink: 0;
     height: 232px;
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    margin-right: -24px;
 
     @media screen and (min-width: $bp-tablet) {
       width: 605px;
@@ -54,23 +57,33 @@
   &__form {
     background-image: url('/Images/contact-background.png');
     background-color: var(--color-brand-dark);
-    border-radius: 32px;
-    width: 422px;
-    height: 482px;
+    border-radius: 24px;
+    width: 320px;
+    height: 434px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      border-radius: 32px;
+      width: 422px;
+      height: 482px;
+    }
   }
 
   &__sign {
     color: var(--color-brand-white);
     font-weight: 600;
     font-size: 22px;
-    line-height: 1.18;
     text-align: center;
     width: 276px;
     margin: 0 auto;
-    padding: 48px 0 32px 0;
+    padding: 42px 0 24px 0;
 
     &--highlight {
       color: var(--color-brand-ligt);
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 48px 0 32px 0;
     }
   }
 

@@ -832,6 +832,9 @@ a {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   height: 232px;
+  width: calc(100% + 48px);
+  margin-left: -24px;
+  margin-right: -24px;
 }
 @media screen and (min-width: 768px) {
   .contacts-section__map {
@@ -843,22 +846,34 @@ a {
 .contacts-section__form {
   background-image: url("/Images/contact-background.png");
   background-color: var(--color-brand-dark);
-  border-radius: 32px;
-  width: 422px;
-  height: 482px;
+  border-radius: 24px;
+  width: 320px;
+  height: 434px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .contacts-section__form {
+    border-radius: 32px;
+    width: 422px;
+    height: 482px;
+  }
 }
 .contacts-section__sign {
   color: var(--color-brand-white);
   font-weight: 600;
   font-size: 22px;
-  line-height: 1.18;
   text-align: center;
   width: 276px;
   margin: 0 auto;
-  padding: 48px 0 32px 0;
+  padding: 42px 0 24px 0;
 }
 .contacts-section__sign--highlight {
   color: var(--color-brand-ligt);
+}
+@media screen and (min-width: 768px) {
+  .contacts-section__sign {
+    padding: 48px 0 32px 0;
+  }
 }
 .contacts-section__field {
   margin-bottom: 16px;
@@ -885,16 +900,20 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   overflow: visible;
-  margin-top: 48px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 48px;
+  }
 }
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 32px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
@@ -902,6 +921,13 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 32px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .footer__nav, .footer__address {
@@ -947,12 +973,18 @@ a {
   padding-bottom: 16px;
 }
 .footer__address-link {
-  color: var(--color-brand-white);
-  font-size: 16px;
-  line-height: 1.18;
-  text-decoration: none;
-  font-style: normal;
-  padding-bottom: 16px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer__address-link {
+    color: var(--color-brand-white);
+    font-size: 16px;
+    line-height: 1.18;
+    text-decoration: none;
+    font-style: normal;
+    padding-bottom: 16px;
+    display: block;
+  }
 }
 .footer__address-social {
   fill: var(--color-brand-white);
