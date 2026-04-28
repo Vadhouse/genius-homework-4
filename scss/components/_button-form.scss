@@ -3,14 +3,26 @@
   color: var(--color-brand-white);
   background: var(--color-brand-ligt);
   border: 2px solid var(--color-brand-ligt);
-  border-radius: 32px;
   cursor: pointer;
   font-weight: 600;
   font-family: 'Roboto';
-  font-size: 18px;
-  display: block;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
   margin: 0 auto 8px;
   text-align: center;
+  width: 241px;
+  height: 44px;
+  border-radius: 24px;
+
+  @media screen and (min-width: $bp-tablet) {
+      width: 281px;
+      height: 53px;
+      border-radius: 32px;
+      font-size: 18px;
+    }
 
   &:hover {
     color: #000000;
@@ -28,8 +40,7 @@
   margin: 0 auto;
   text-align: center;
 
-  &__link,
-  .form-terms-link {
+  &__link {
     color: var(--color-brand-gray);
     text-underline-offset: 1px;
   }

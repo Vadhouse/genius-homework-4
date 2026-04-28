@@ -9,15 +9,22 @@
 
 .form-input {
   padding: 18px 32.85px;
-  width: 310px;
-  height: 52px;
+  width: 241px;
+  height: 46px;
   margin: 0 auto;
   display: block;
   font-size: 13px;
-  border: 2px solid var(--color-brand-gray);
-  border-radius: 32px;
+  border: 1.5px solid var(--color-brand-gray);
+  border-radius: 24px;
   background-color: var(--color-brand-dark);
   color: var(--color-brand-white);
+
+  @media screen and (min-width: $bp-tablet) {
+    width: 310px;
+    height: 52px;
+    border: 2px solid var(--color-brand-gray);
+    border-radius: 32px;
+  }
 }
 
 .form-input:focus {

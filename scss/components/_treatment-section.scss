@@ -95,8 +95,8 @@
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-    width: 344px;
-    height: 456px;
+    width: 320px;
+    height: 416px;
     padding: 37px;
     background-image: linear-gradient(
       180.05deg,
@@ -111,6 +111,8 @@
     border-bottom-right-radius: 4px;
 
     @media screen and (min-width: $bp-tablet) {
+      width: 344px;
+      height: 456px;
     }
   }
 
