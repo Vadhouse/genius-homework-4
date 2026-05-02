@@ -1,7 +1,7 @@
 .contacts-section {
   padding: 0;
 
-  @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+  @media screen and (min-width: $bp-tablet) {
     padding: 48px 0 48px 0;
   }
 

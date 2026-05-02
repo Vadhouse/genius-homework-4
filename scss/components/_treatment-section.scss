@@ -1,7 +1,7 @@
 .treatment-section {
   padding: 0 0 40px 0;
 
-  @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+  @media screen and (min-width: $bp-tablet) {
     padding: 48px 0 48px 0;
   }
 
@@ -36,7 +36,7 @@
   &__container {
     overflow: hidden;
 
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       margin: 0 auto;
       max-width: 1216px;
     }

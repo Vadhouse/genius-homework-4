@@ -2,7 +2,7 @@
   padding-bottom: 0;
   height: 347px;
 
-  @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+  @media screen and (min-width: $bp-tablet) {
     padding-bottom: 128px;
     height: 100%;
   }
@@ -11,7 +11,7 @@
     display: -webkit-box;
     flex-direction: column;
 
-    @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       display: flex;
       flex-direction: row;
       gap: 32px;
@@ -34,7 +34,7 @@
     text-align: left;
     margin-bottom: 24px;
 
-    @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       width: 529px;
       height: 148px;
       margin: 40px 0 40px 0;
@@ -50,7 +50,7 @@
       color: var(--color-brand-dark);
       font-weight: 500;
 
-      @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+      @media screen and (min-width: $bp-tablet) {
         font-weight: 700;
       }
     }
@@ -64,7 +64,7 @@
     font-size: 18px;
     line-height: 1.16;
 
-    @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       font-size: 22px;
       line-height: 1.7;
       width: 709px;
@@ -76,7 +76,7 @@
       margin-bottom: 0;
       height: 168px;
 
-      @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+      @media screen and (min-width: $bp-tablet) {
         margin-bottom: 199px;
         height: 152px;
       }
@@ -100,7 +100,7 @@
     gap: 40px;
     display: none;
 
-    @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       display: grid;
     }
   }
@@ -113,8 +113,11 @@
   &__face__before {
     box-shadow: 0px 4px 4px rgba(168, 198, 245, 0.2);
     background-color: #d9d9d9;
-    margin: 1px 168px 0 4px;
+    margin-right: 168px;
     border-radius: 50%;
+    max-width: none;
+    width: 327px;
+    height: auto;
   }
 
   &__face__after {
@@ -122,6 +125,9 @@
     background-color: #d9d9d9;
     margin-left: 164px;
     border-radius: 50%;
+    max-width: none;
+    width: 327px;
+    height: auto;
   }
 
   /* спільна анімація для всіх трьох декоративних зірок */
@@ -145,7 +151,7 @@
     animation: star-blink 2.5s infinite ease-in-out alternate;
     pointer-events: none;
 
-    @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       fill: var(--color-brand-dark);
       position: absolute;
       top: 54%;
@@ -162,7 +168,7 @@
   &__star__2 {
     display: none;
 
-    @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       fill: var(--color-brand-ligt);
       position: absolute;
       top: 8%;
@@ -178,7 +184,7 @@
   &__star__3 {
     display: none;
 
-    @media screen and (min-width: $bp-tablet), screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       fill: var(--color-brand-gray);
       position: absolute;
       top: 39%;

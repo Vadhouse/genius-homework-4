@@ -10,8 +10,8 @@
   justify-content: center;
   padding: 20px 0;
   transition:
-    opacity 0.3s,
-    visibility 0.3s;
+  opacity 0.3s,
+  visibility 0.3s;
 
   &.is-hidden {
     opacity: 0;
@@ -23,41 +23,62 @@
 .modal {
   position: relative;
   width: 100%;
-  max-width: 723px;
+  max-width: 332px;
   height: 100%;
   max-height: 681px;
   background-image: url('/Images/modal-background.png');
   background-color: var(--color-brand-dark);
   border-radius: 48px;
-  padding: 42px 144px 0 144px;
+  padding: 42px 20px 0 20px;
   overflow-y: auto;
+
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 723px;
+    max-height: 681px;
+    padding: 42px 144px 0 144px;
+  }
 
   &__btn-close {
     position: absolute;
-    top: 42px;
-    right: 42px;
+    top: 25px;
+    right: 25px;
     background: none;
     border: none;
     cursor: pointer;
 
+    @media screen and (min-width: $bp-tablet) {
+        top: 42px;
+        right: 42px;
+      }
+
     svg {
-      width: 32px;
-      height: 32px;
+      width: 22px;
+      height: 22px;
       display: block;
       stroke: var(--color-brand-white);
+
+      @media screen and (min-width: $bp-tablet) {
+        width: 32px;
+        height: 32px;
+      }
     }
   }
 
   &__request-call {
     color: var(--color-brand-white);
-    font-family: Play;
-    font-weight: 700;
-    font-size: 64px;
+    font-weight: 600;
+    font-size: 42px;
     line-height: 1.15;
     text-align: center;
-    width: 435px;
-    height: 148px;
     margin-bottom: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-family: 'Play';
+      font-weight: 700;
+      font-size: 64px;
+      width: 435px;
+      height: 148px;
+    }
   }
 
   &__sign-up {

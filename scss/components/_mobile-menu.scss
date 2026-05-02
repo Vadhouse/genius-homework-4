@@ -34,4 +34,41 @@
     position: absolute;
     top: 16px;
   }
+
+  &__backdrop {
+    width: 360px;
+    height: 640px;
+    background-color: var(--color-brand-white);
+    padding: 16px 20px 0 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 32px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-brand-dark);
+    font-size: 14px;
+    line-height: 1;
+    font-style: normal;
+  }
+
+  &__link:hover {
+    color: var(--color-brand-light);
+  }
+
+  &__address-social-line {
+    display: flex;
+    justify-content: flex-start;
+    gap: 19px;
+    padding-top: 16px;
+  }
+
+  &__address-social {
+    fill: var(--color-brand-dark);
+  }
 }
