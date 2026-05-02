@@ -1,7 +1,7 @@
 .why-section {
   padding: 104px 0 40px 0;
 
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desktop) {
     padding: 48px 0 48px 0;
   }
 
@@ -15,7 +15,7 @@
     font-size: 32px;
     line-height: 1.18;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       width: 432px;
       height: 148px;
       margin: 0 auto 48px;
@@ -42,7 +42,7 @@
     align-items: center;
     margin: 0 auto;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       width: 1060px;
       height: 181px;
       flex-direction: row;

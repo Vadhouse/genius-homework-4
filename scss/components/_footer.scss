@@ -8,7 +8,7 @@
   background-position: center;
   overflow: visible;
 
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desktop) {
     margin-top: 48px;
   }
 
@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       flex-direction: row;
       display: flex;
       gap: 32px;
@@ -30,7 +30,7 @@
     flex-direction: column;
     text-align: center;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       flex-direction: row;
       flex-basis: 50%;
       text-align: left;
@@ -42,7 +42,7 @@
     flex-grow: 1;
     padding-bottom: 42px;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       padding-bottom: 0;
     }
   }
@@ -73,7 +73,7 @@
       order: 4;
     }
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       display: block;
     }
   }
@@ -89,7 +89,7 @@
       order: 5;
     }
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       display: block;
     }
   }
@@ -103,7 +103,7 @@
     transition: color 0.3s;
     padding-bottom: 16px;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       font-size: 16px;
       line-height: 1;
     }
@@ -112,7 +112,7 @@
   &__address-link {
     display: none;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       color: var(--color-brand-white);
       font-size: 16px;
       line-height: 1;
@@ -129,7 +129,7 @@
     gap: 23px;
     line-height: 0;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       justify-content: flex-start;
       gap: 28px;
     }
@@ -141,7 +141,7 @@
     height: 32px;
     padding-bottom: 8px;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       width: 42px;
       height: 42px;
       padding-bottom: 0;
@@ -156,7 +156,7 @@
     text-decoration: none;
     padding-bottom: 16px;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       font-size: 16px;
       line-height: 1;
     }
@@ -169,7 +169,7 @@
     font-style: normal;
     margin-bottom: 0;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       font-size: 13px;
       line-height: 1;
     }
@@ -188,7 +188,7 @@
     z-index: 1;
     display: none;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       display: block;
     }
   }
