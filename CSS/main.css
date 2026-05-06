@@ -34,6 +34,13 @@
   font-weight: 700;
   src: url("../fonts/roboto-v47-cyrillic_latin-700.woff2") format("woff2");
 }
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v51-cyrillic_latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 :root {
   --color-brand-ligt: #2b7fff;
   --color-brand-dark: #011c44;
@@ -1262,6 +1269,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px 0;
+  z-index: 99;
   -webkit-transition: opacity 0.3s, visibility 0.3s;
   transition: opacity 0.3s, visibility 0.3s;
 }
